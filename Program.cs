@@ -77,9 +77,13 @@ namespace HW_31_03
             int[] newArr = new int[count];
             for (int i = 0; i < count; i++)
             {
+                if(index>= number.Length){
+                    newArr[i]=1;
+                }
+                else {
+                    newArr[i]=number[index++];
+                }
                 
-                 newArr[i]=1;
-                 newArr[i]=number[index++];
             }
             foreach (int item in newArr)
             {
